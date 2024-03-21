@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+   background-image: url("bgbg.jpg");
+   background-position: center;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.displaylogo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    transition: all .55 ease;
+}
+.nav a:hover{
+    border-bottom: white;
+}
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 100001;    
+    cursor: pointer;
+}
+.images{
+    height: 100%;
+    width: 90%;
+    min-height: 50vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}   
+.container {
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 1px;
+    grid-column-gap: 50px;
+    position: relative; 
+}
+section{
+    padding: 0 19%;
+}
+.lyrics{
+    font-size: small;
+    color: white;
+}
+.lyrics2{
+    font-size: small;
+    color: white;
+}
+.lyrics3{
+    font-size: small;
+    color: white;
+}
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+}
+@media (media-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media (media-width: 1340px){
+    .container img{
+    width: 100%;
+    height: auto;
+    }
+}
+
+
